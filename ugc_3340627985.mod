@@ -1,0 +1,10 @@
+version="1.0"
+tags={
+	"Balance"
+	"Graphics"
+}
+name="!国家娘美化"
+picture="thumbnail.png"
+supported_version="v1.37.*.*"
+path="D:/SteamLibrary/steamapps/workshop/content/236850/3340627985"
+remote_file_id="3340627985"

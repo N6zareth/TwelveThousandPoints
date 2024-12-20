@@ -3792,49 +3792,6 @@ gbr_row_5 = {
 		}
 	}
 
-	gbr_colonize_australia = {
-		icon = colonize_australia
-		required_missions = { gbr_chart_the_southern_sea }
-		position = 8
-		provinces_to_highlight = {
-			region = australia_region
-			ROOT = {
-				NOT = {
-					any_subject_country = {
-						is_colonial_nation = yes
-						capital_scope = {
-							colonial_region = colonial_australia
-						}
-						any_owned_province = {
-							region = australia_region
-						}
-					}
-				}
-			}
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = GBR }
-			any_subject_country = {
-				is_colonial_nation = yes
-				capital_scope = {
-					colonial_region = colonial_australia
-				}
-				any_owned_province = {
-					region = australia_region
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = gbr_colonial_australia
-				duration = 9125
-			}
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-
 	gbr_conquer_eastern_india = {
 		icon = mission_unite_bengal
 		required_missions = { gbr_establish_first_indian_trade_post }

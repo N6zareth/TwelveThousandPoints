@@ -1,15 +1,5 @@
 ﻿l_english:
-
-
-
-
-
-
-
-
-
-
-
+### BRITAIN ###
 # Discover the Americas
 naz_gbr_discover_america:0 "§Y[Root.GetName]§! has discovered the §YNew World§!"
 # Colonize Canada
@@ -26,3 +16,13 @@ naz_gbr_dominate_new_world.2:0 "§Y[Root.GetName]§! has no colonial subject wit
 naz_gbr_chart_south_seas:0 "§Y[Root.GetName]§! has discovered the §YEastern Indian Ocean§! region"
 # Colonize Spice Isles
 naz_gbr_colonize_spice_isles:0 "§Y[Root.GetName]§! or its non-tributary subjects owns §YSri Lanka§!"
+
+### SPAIN / CASTILE ###
+# Sails of Exploration
+naz_castile_exploration_ideas:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision \n §YColonial Ventures§! decision is available at §Ydiplomatic and admininistration technology level 5§!"
+# Naz Spice Islands
+naz_sail_to_the_east_indies:0 "§Y[Root.GetName]§! has discovered the §YEastern Indian Region§!"
+# Las Islas Filipinas
+naz_islas_filipinas:0 "§Y[Root.GetName]§! or its non-tributary subjects owns at least 25 provinces in the §YIndia§! subcontinent\n\nUnfortunately I deleted the Philippines XD - Naz"
+# Discover Caribbean
+naz_cas_discover_caribbean:0 "§Y[Root.GetName]§! or its colonial subject owns a province in the §YNew World§!"

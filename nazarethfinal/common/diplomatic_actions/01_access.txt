@@ -1,8 +1,5 @@
 milaccess = { # REQUEST MIL ACCESS
-    condition = {
-		potential = {
-			ai = no
-		}
+	condition = {
 		allow = {
 			ROOT = {
 				ai = no
@@ -11,8 +8,9 @@ milaccess = { # REQUEST MIL ACCESS
 	}
 	condition = {
 		allow = {
-			ROOT = {
-				ai = no
+			has_opinion = {
+				who = FROM
+				value = -200
 			}
 		}
 	}
@@ -30,8 +28,9 @@ offermilaccess = { # OFFER MIL ACCESS
 	}
 	condition = {
 		allow = {
-			ROOT = {
-				ai = no
+			has_opinion = {
+				who = FROM
+				value = -200
 			}
 		}
 	}
