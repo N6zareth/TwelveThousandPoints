@@ -1,0 +1,38 @@
+milaccess = { # REQUEST MIL ACCESS
+    condition = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			ROOT = {
+				ai = no
+			}
+		}
+	}
+	condition = {
+		allow = {
+			ROOT = {
+				ai = no
+			}
+		}
+	}
+}
+offermilaccess = { # OFFER MIL ACCESS
+    condition = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			ROOT = {
+				ai = no
+			}
+		}
+	}
+	condition = {
+		allow = {
+			ROOT = {
+				ai = no
+			}
+		}
+	}
+}

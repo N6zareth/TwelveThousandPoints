@@ -1,0 +1,43 @@
+﻿l_english:
+
+
+
+#Naz Trade Nodes
+ carribean_trade:0 "New World"
+ english_channel:0 "Laagvlakte"
+ north_sea:0 "British Isles"
+ rheinland:0 "Bayern"
+ saxony:0 "Sachsen"
+ tunis:0 "El Maghreb"
+ basra:0 "Bahrain and Lower Arabs"
+ genua:0 "Genova"
+ venice:0 "Venezia"
+ ragusa:0 "Dubrovnik"
+ doab:0 "Aryavarta"
+ krakow:0 "Wielkopolska"
+ lahore:0 "Afghanistan"
+ 
+ colonial_eastern_america:0 "New World"
+ 
+ #Naz Area / States
+ naz_congo_area:0 "Namibia"
+ naz_east_guinea_area:0 "East Guinea"
+ naz_west_guinea_area:0 "West Guinea"
+ 
+ #Naz Congo 
+ PROV4942:0 "Sumbe"
+ PROV4943:0 "Lubango"
+ PROV4944:0 "Torra"
+ PROV4945:0 "Luderitz"
+ PROV4946:0 "Dorob"
+ 
+ #Naz Guinea
+ PROV4947:0 "Faranah"
+ PROV4948:0 "Odienne"
+ PROV4949:0 "Beyla"
+ PROV4950:0 "Boundiali"
+ PROV4951:0 "Danane"
+ PROV4952:0 "Daloa"
+ PROV4953:0 "Saguela"
+ PROV4954:0 "Korhogo"
+ PROV4955:0 "Guinea"

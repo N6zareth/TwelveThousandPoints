@@ -1,0 +1,300 @@
+country_decisions = {
+	zzz_eco_golden_age_decisions = {
+		color = { 166  0  0 }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		potential = {
+			NOT = { has_country_flag = economic_golden_age }
+		}
+		allow = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			splendor = 200
+		}
+		effect = {
+			add_country_modifier = {
+				name = "economic_golden_age"
+				duration = 18250
+			}
+			set_country_flag = economic_golden_age
+		}
+	}
+	
+	zzz_mil_golden_age_decisions = {
+		color = { 166 0 0 }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		potential = {
+			NOT = { has_country_flag = military_golden_age }
+		}
+		allow = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			splendor = 200
+		}
+		effect = {
+			add_country_modifier = {
+				name = "military_golden_age"
+				duration = 18250
+			}
+			set_country_flag = military_golden_age
+		}
+	}
+	
+	qolu_eur_colonists = {
+		color = { 166 0 0 }
+		ai_will_do = {
+			factor = 1
+			ai_importance = 400
+		}
+
+		potential = {
+			NOT = { has_country_modifier = qolu_2colonists }
+			adm_tech = 5
+			dip_tech = 5
+			major = yes
+				OR = {
+				tag = ENG
+				tag = GBR
+				tag = SCO
+				tag = POR
+				tag = CAS
+				tag = ARA
+				tag = SPA
+				tag = HOL
+				tag = NED
+				tag = SWE
+				tag = NOR
+				tag = DAN
+				tag = SCA
+				region = japan_region
+				ai = no
+				}
+			}
+
+		allow = {
+			adm_tech = 5
+			dip_tech = 5
+			dip_power = 50
+		}
+
+		effect = {
+			add_dip_power = -50
+			add_country_modifier = {
+				name = qolu_2colonists
+				duration = -1
+			}
+		}
+	}
+
+qolu_national_debt = {
+		color = { 166  0  0 }
+
+		potential = {
+			NOT = { has_country_modifier = qolu_tackle_debt_cd }
+			NOT = { has_country_modifier = qolu_tackle_debt }
+			NOT = { has_country_modifier = qolu_national_rebuild }
+			is_bankrupt = no
+		}
+
+		allow = {
+			num_of_loans = 10
+			is_at_war = no
+		}
+
+		effect = {
+			add_years_of_income = 0.5
+			add_country_modifier = {
+				name = "qolu_tackle_debt"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "qolu_tackle_debt_cd"
+				duration = 3650
+				hidden = yes
+			}
+		}
+	}
+
+	qolu_national_rebuilding = {
+		color = { 166  0  0 }
+		potential = {
+			has_country_modifier = qolu_tackle_debt
+			NOT = { has_country_modifier = qolu_national_rebuild }
+		}
+
+		allow = {
+			NOT = { years_of_income = 0.5 }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "qolu_national_rebuild"
+				duration = 1825
+			}
+
+			remove_country_modifier = qolu_tackle_debt
+		}
+	}
+	
+	qolu_all_seats_parliament = {
+		color = { 166 0 0 }
+		
+		potential = {
+			ai = no
+			has_parliament = yes
+		}
+
+		allow = {
+			any_owned_province = {
+				has_seat_in_parliament = no
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					has_seat_in_parliament = no
+					is_state = yes
+				}
+				set_seat_in_parliament = yes
+			}
+		}
+	}
+	
+	echo_development_counter = {
+		color = { 166  0  0 }
+		potential = { ai = no }
+		allow = {
+			if = {
+				limit = {
+					has_country_flag = has_echo_development_counter_cflag
+				}
+				custom_trigger_tooltip = {
+					tooltip = echo_development_counter_tt
+				}
+			}
+			hidden_trigger = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = has_echo_development_counter_cflag }
+					}
+					always = yes
+				}
+				else = {
+					always = no
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = has_echo_development_counter_cflag }
+				}
+				custom_tooltip = echo_development_counter_tt_updater
+				hidden_effect = { echo_development_counter = { on_startup = yes } }
+			}
+		}
+	}
+
+	echo_critical_events = {
+		color = { 166  0  0 }
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = echo_radical_reform_decision
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_military_reform_decision
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_commandant_decision
+				NOT = { has_country_modifier = echo_commandant_cooldown }
+				NOT = { has_country_modifier = echo_commandant_cooldown_100 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_grand_captain_decision
+				NOT = { has_country_modifier = echo_grand_captain_cooldown }
+				NOT = { has_country_modifier = echo_grand_captain_cooldown_100 }
+			}
+			always = no
+		}
+		effect = {
+		}
+	}
+	
+	zzz_wool_cloth = {
+		color = { 166  0  0 }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		potential = {
+			ai = no
+		}
+		
+		allow = {
+			any_owned_province = {
+				trade_goods = wool
+				development = 30
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					trade_goods = wool
+					development = 30
+				}	
+				change_trade_goods = cloth
+			}
+		}
+	}
+	
+	sea_state_edicts_decision = {
+		color = { 166 0 0 }
+		major = yes
+		provinces_to_highlight = {
+			has_state_edict_enabled = yes
+			owned_by = ROOT
+		}
+		potential = {
+			ai = no
+			NOT = { has_country_flag = sea_state_edicts_flag }
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = sea_state_edicts_decision_ttt
+				always = yes
+			}
+		}
+		effect = {
+			set_country_flag = sea_state_edicts_flag
+			country_event = { id = sealand_events.28 }
+			custom_tooltip = sea_state_edicts_decision_tt
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
