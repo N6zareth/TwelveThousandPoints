@@ -1720,25 +1720,31 @@ gbr_row_3 = {
 		}		
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
-			if = {
-				limit = { is_random_new_world = no }
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						continent = north_america
-						continent = south_america
+			custom_trigger_tooltip = {
+				tooltip = naz_gbr_dominate_new_world.1
+				if = {
+					limit = { is_random_new_world = no }
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+						value = 200
 					}
-					value = 200
+				}
+				else = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						continent = new_world
+						value = 100
+					}
 				}
 			}
-			else = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					continent = new_world
-					value = 100
-				}
-			}
-			NOT = {
-				any_subject_country = {
-					liberty_desire = 25
+			custom_trigger_tooltip = {
+				tooltip = naz_gbr_dominate_new_world.2
+				NOT = {
+					any_subject_country = {
+						liberty_desire = 25
+					}
 				}
 			}
 		}	
@@ -2777,8 +2783,8 @@ gbr_row_4 = {
 		position = 8
 		provinces_to_highlight = {
 			OR = {
-				trade_company_region = trade_company_moluccas
-				trade_company_region = trade_company_indonesia
+				area = lanka_area
+				area = south_lanka_area
 			}
 			is_sea = no
 			NOT = { owned_by = ROOT }
@@ -2786,13 +2792,16 @@ gbr_row_4 = {
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					trade_company_region = trade_company_moluccas
-					trade_company_region = trade_company_indonesia
+			custom_trigger_tooltip = {
+				tooltip = naz_gbr_colonize_spice_isles
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3
+					area = lanka_area
 				}
-				is_city = yes
-				value = 4
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 3 
+					area = south_lanka_area
+				}
 			}
 		}
 		effect = {
@@ -3760,24 +3769,14 @@ gbr_row_5 = {
 		required_missions = { gbr_seize_the_cape }
 		position = 7
 		provinces_to_highlight = {
-			OR = {
-				colonial_region = colonial_australia
-				trade_company_region = trade_company_indonesia
-				trade_company_region = trade_company_moluccas
-			}
+			superregion = india_superregion
 			NOT = { has_discovered = ROOT }
 		}		
 		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
 			custom_trigger_tooltip = {
-				tooltip = ned_spice_australia.tooltip
-				colonial_australia = {
-					has_discovered = ROOT
-				}
-				trade_company_indonesia = {
-					has_discovered = ROOT
-				}
-				trade_company_moluccas = {
+				tooltip = naz_gbr_chart_south_seas
+				east_indian_ocean_region = {
 					has_discovered = ROOT
 				}
 			}

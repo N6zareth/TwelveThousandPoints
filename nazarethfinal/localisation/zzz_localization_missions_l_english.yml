@@ -19,6 +19,9 @@ naz_gbr_colonize_canada.2:0 "§Y[Root.GetName]§! or its colonial subject owns 1
 naz_gbr_settle_new_world:0 "§Y[Root.GetName]§! or its colonial subject owns 10 provinces in the §YNew World§!"
 # Colonize Caribbean
 naz_gbr_colonize_caribbean:0 "§Y[Root.GetName]§! or its colonial subjects own 5 provinces in the §YCaribbean§! region"
+# Dominate New World
+naz_gbr_dominate_new_world.1:0 "§Y[Root.GetName]§! or its colonial subjects own 200 provinces in the §YCaribbean§!"
+naz_gbr_dominate_new_world.2:0 "§Y[Root.GetName]§! has no colonial subject with §Y25% Liberty Desire§!"
 # Chart the Southern Seas
 naz_gbr_chart_south_seas:0 "§Y[Root.GetName]§! has discovered the §YEastern Indian Ocean§! region"
 # Colonize Spice Isles
