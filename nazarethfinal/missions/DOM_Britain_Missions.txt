@@ -866,7 +866,7 @@ gbr_row_slot_2 = {
 		provinces_to_highlight = {
 			if = {
 				limit = { is_random_new_world = no }
-				colonial_region = colonial_canada
+				region = canada_region
 			}
 			else = {
 				continent = new_world
@@ -1653,22 +1653,31 @@ gbr_row_3 = {
 		required_missions = { gbr_explore_new_world }
 		position = 6		
 		provinces_to_highlight = {
+			if = {
+				limit = { is_random_new_world = no }
+				colonial_region = colonial_eastern_america
+			}
 			else = {
 				continent = new_world
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}		
-		trigger = {
+		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
 			if = {
-				custom_trigger_tooltip = {
-					tooltip = naz_gbr_settle_new_world
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 10
-						is_city = yes
-						colonial_region = colonial_eastern_america
-					}
+				limit = { is_random_new_world = no }
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					colonial_region = colonial_eastern_america
+					is_city = yes
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 20
+					continent = new_world
+					is_city = yes
 				}
 			}
 		}	
@@ -2624,10 +2633,10 @@ gbr_row_4 = {
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
-					tooltip = naz_gbr_colonize_caribbean
+					tooltip = english_colony_in_the_carribean.tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
-						region = carribeans_region
+						colonial_region = colonial_the_carribean
 						is_city = yes
 					}
 				}
@@ -2765,8 +2774,8 @@ gbr_row_4 = {
 		position = 8
 		provinces_to_highlight = {
 			OR = {
-				area = lanka_area
-				area = south_lanka_area
+				trade_company_region = trade_company_moluccas
+				trade_company_region = trade_company_indonesia
 			}
 			is_sea = no
 			NOT = { owned_by = ROOT }
@@ -2774,17 +2783,13 @@ gbr_row_4 = {
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
-			
-			custom_trigger_tooltip = {
-				tooltip = naz_gbr_colonize_spice_isles
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						trade_company_region = trade_company_moluccas
-						trade_company_region = trade_company_indonesia
-					}
-					is_city = yes
-					value = 4
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					trade_company_region = trade_company_moluccas
+					trade_company_region = trade_company_indonesia
 				}
+				is_city = yes
+				value = 4
 			}
 		}
 		effect = {
@@ -3753,18 +3758,27 @@ gbr_row_5 = {
 		position = 7
 		provinces_to_highlight = {
 			OR = {
-				region = east_indian_ocean_region
+				colonial_region = colonial_australia
+				trade_company_region = trade_company_indonesia
+				trade_company_region = trade_company_moluccas
 			}
 			NOT = { has_discovered = ROOT }
 		}		
 		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
 			custom_trigger_tooltip = {
-			tooltip = naz_gbr_chart_south_seas
-				east_indian_ocean_region = {
+				tooltip = ned_spice_australia.tooltip
+				colonial_australia = {
 					has_discovered = ROOT
 				}
-		}
+				trade_company_indonesia = {
+					has_discovered = ROOT
+				}
+				trade_company_moluccas = {
+					has_discovered = ROOT
+				}
+			}
+		}	
 		effect = {
 			add_country_modifier = {
 				name = "eng_australian_colony"
@@ -3775,9 +3789,8 @@ gbr_row_5 = {
 			factor = 250
 		}
 	}
-	}
-	
-		gbr_colonize_australia = {
+
+	gbr_colonize_australia = {
 		icon = colonize_australia
 		required_missions = { gbr_chart_the_southern_sea }
 		position = 8
