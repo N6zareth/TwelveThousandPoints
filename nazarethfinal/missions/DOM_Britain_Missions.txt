@@ -1664,20 +1664,23 @@ gbr_row_3 = {
 			has_discovered = ROOT
 		}		
 		trigger = { 
-			not_in_mission_preview_mode = { key = GBR }
-			if = {
-				limit = { is_random_new_world = no }
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_eastern_america
-					is_city = yes
+			custom_trigger_tooltip = {
+				tooltip = naz_gbr_settle_new_world
+				not_in_mission_preview_mode = { key = GBR }
+				if = {
+					limit = { is_random_new_world = no }
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10
+						colonial_region = colonial_eastern_america
+						is_city = yes
+					}
 				}
-			}
-			else = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 20
-					continent = new_world
-					is_city = yes
+				else = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 20
+						continent = new_world
+						is_city = yes
+					}
 				}
 			}
 		}	
@@ -2620,7 +2623,7 @@ gbr_row_4 = {
 		provinces_to_highlight = {
 			if = {
 				limit = { is_random_new_world = no }
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 			}
 			else = {
 				continent = new_world
@@ -2633,10 +2636,10 @@ gbr_row_4 = {
 			if = {
 				limit = { is_random_new_world = no }
 				custom_trigger_tooltip = {
-					tooltip = english_colony_in_the_carribean.tooltip
+					tooltip = naz_gbr_colonize_caribbean
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
-						colonial_region = colonial_the_carribean
+						region = carribeans_region
 						is_city = yes
 					}
 				}

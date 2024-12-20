@@ -16,7 +16,7 @@ naz_gbr_discover_america:0 "§Y[Root.GetName]§! has discovered the §YNew World
 naz_gbr_colonize_canada.1:0 "§Y[Root.GetName]§! has discovered the §YCanada§! region"
 naz_gbr_colonize_canada.2:0 "§Y[Root.GetName]§! or its colonial subject owns 10 provinces in the §YCanada§! region"
 # Settle in the New World
-naz_gbr_settle_new_world:0 "§Y[Root.GetName]§! or its colonial subject owns 10 provinces in the §YCanada§!"
+naz_gbr_settle_new_world:0 "§Y[Root.GetName]§! or its colonial subject owns 10 provinces in the §YNew World§!"
 # Colonize Caribbean
 naz_gbr_colonize_caribbean:0 "§Y[Root.GetName]§! or its colonial subjects own 5 provinces in the §YCaribbean§! region"
 # Chart the Southern Seas
