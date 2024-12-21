@@ -35,3 +35,6 @@ naz_establish_la_plata:0 "§Y[Root.GetName]§! or its colonial subjects owns 5 p
 # New Granada
 naz_new_granada.1:0 "§Y[Root.GetName]§! or its colonial subjects owns 5 states in the §YColombia§! region with a holy order"
 naz_new_granada.2:0 "§Y[Root.GetName]§! or its colonial subjects owns 25 provinces in the §YColombia§! region"
+
+### PORTUGAL ###
+naz_sails_of_exploration:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision \n §YColonial Ventures§! decision is available at §Ydiplomatic and admininistration technology level 5§!"
