@@ -1,22 +1,4 @@
 ﻿l_english:
-
-
-
-#Naz Trade Nodes
- carribean_trade:0 "New World"
- english_channel:0 "Low Countries"
- north_sea:0 "British Isles"
- rheinland:0 "Bavaria"
- saxony:0 "Saxony"
- wien:0 "Vienna"
- tunis:0 "El Maghreb"
- basra:0 "Bahrain and Lower Arabs"
- ragusa:0 "Dubrovnik"
- doab:0 "Aryavarta"
- lahore:0 "Afghanistan"
- 
- colonial_eastern_america:0 "New World"
- 
  #Naz Area / States
  naz_congo_area:0 "Namibia"
  naz_east_guinea_area:0 "East Guinea"
@@ -38,4 +20,3 @@
  PROV4952:0 "Daloa"
  PROV4953:0 "Saguela"
  PROV4954:0 "Korhogo"
- PROV4955:0 "Guinea"

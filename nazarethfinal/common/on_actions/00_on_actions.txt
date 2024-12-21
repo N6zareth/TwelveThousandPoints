@@ -829,9 +829,6 @@ on_battle_lost_unit = {
 				}
 			}
         }
-        OIR = {
-            country_event = { id = flavor_oir.2 }
-        }
     }
 }
 
