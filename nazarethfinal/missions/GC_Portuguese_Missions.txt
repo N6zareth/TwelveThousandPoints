@@ -173,7 +173,7 @@ gc_por_1 = {
 					religion = catholic
 				}
 				custom_trigger_tooltip = {
-					tooltip = port_jesuits_tooltip
+					tooltip = naz_por_jesuits
 					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
 						holy_order = jesuit_order
 						colonial_region = colonial_brazil
@@ -186,7 +186,7 @@ gc_por_1 = {
 					tooltip = port_jesuits_alternative_tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						religion = ROOT
-						colonial_region = colonial_brazil
+						region = brazil
 						value = 35
 					}
 				}
@@ -548,9 +548,6 @@ gc_por_2_b = {
 			1466 = {
 				is_strongest_trade_power = ROOT
 			}
-			1531 = {
-				is_strongest_trade_power = ROOT
-			}
 			1293 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -837,10 +834,13 @@ gc_por_3_b = {
 		}
 		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				region = carribeans_region
-				is_city = yes
+			custom_trigger_tooltip = {
+				tooltip = naz_por_colonize_caribbean
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					region = carribeans_region
+					is_city = yes
+				}
 			}
 		}
 		
