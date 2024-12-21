@@ -19,7 +19,7 @@ naz_gbr_colonize_spice_isles:0 "§Y[Root.GetName]§! or its non-tributary subjec
 
 ### SPAIN / CASTILE ###
 # Sails of Exploration
-naz_castile_exploration_ideas:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision \n §YColonial Ventures§! decision is available at §Ydiplomatic and admininistration technology level 5§!"
+naz_castile_exploration_ideas:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision \n §YColonial Ventures§! decision is available at §Ydiplomatic and administrative technology level 5§!"
 # Naz Spice Islands
 naz_sail_to_the_east_indies:0 "§Y[Root.GetName]§! has discovered the §YEastern Indian Region§!"
 # Las Islas Filipinas
@@ -38,9 +38,13 @@ naz_new_granada.2:0 "§Y[Root.GetName]§! or its colonial subjects owns 25 provi
 
 ### PORTUGAL ###
 # Sails of Exploration
-naz_sails_of_exploration:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision \n §YColonial Ventures§! decision is available at §Ydiplomatic and admininistration technology level 5§!"
+naz_sails_of_exploration:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision\n\n §YColonial Ventures§! decision is available at §Ydiplomatic and administrative technology level 5§!"
 # Go Westward
 naz_go_westward.1:0 "§Y[Root.GetName]§! has discovered the §YBrazil§! region"
 naz_gow_westward.2:0 "§Y[Root.GetName]§! or its colonial subject own 1 province in the §YBrazil§! region"
 # Jesuit Missions
 naz_por_jesuits:0 "§Y[Root.GetName]§! or its colonial subjects owns 7 states in the §YBrazil§! region with a holy order"
+# Colonize Caribbean
+naz_por_colonize_caribbean:0 "§Y[Root.GetName]§! or its colonial subject own 1 province in the §YCaribbean§! region"
+# Establish foothold in Brazil
+naz_por_foothold_brazil:0 "§Y[Root.GetName]§! or its colonial subject own 10 provinces in the §YBrazil§! region"
