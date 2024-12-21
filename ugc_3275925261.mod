@@ -1,0 +1,18 @@
+version="1.37.*"
+tags={
+	"Balance"
+	"Missions And Decisions"
+	"Gameplay"
+	"National Ideas"
+	"Loading Screen"
+	"Technologies"
+	"Trade"
+	"Utilities"
+	"New Nations"
+	"Events"
+}
+name="Gecko V9 (bastard x gecko)"
+picture="thumbnail.png"
+supported_version="v1.37.*"
+path="D:/SteamLibrary/steamapps/workshop/content/236850/3275925261"
+remote_file_id="3275925261"

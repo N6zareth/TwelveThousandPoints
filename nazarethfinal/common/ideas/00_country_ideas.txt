@@ -685,7 +685,7 @@ MOS_ideas = {
 RUS_ideas = {
 	start = {
 		core_creation = -0.15
-		global_manpower_modifier = 0.33
+		land_maintenance_modifier = -0.10
 	}
 
 	bonus = {
@@ -15471,8 +15471,9 @@ MOR_ideas = {
 	mor_fleet = {
 		galley_power = 0.2
 	}
-	mor_pirate_republics = {
-		privateer_efficiency = 0.15
+	naz_mor_reconquista = {
+		land_morale = 0.1
+		shock_damage_received = -0.05
 	}
 	mor_slave_soldiers = {
 		land_maintenance_modifier = -0.05

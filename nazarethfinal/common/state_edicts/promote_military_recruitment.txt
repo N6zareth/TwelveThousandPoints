@@ -1,4 +1,4 @@
-edict_encourage_development = {
+edict_promote_military_recruitment = {
 	potential = {
 		always = yes		#we support "potential" if modders want to have lots and just show some.
 	}
@@ -18,24 +18,23 @@ edict_encourage_development = {
 	}
 	
 	modifier = {
-		local_production_efficiency = 0.25
+		local_manpower_modifier = 0.33
 	}
 	
-	color = {  244 184 12  }
-	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_encourage_development_flag } }
-
+	color = {  188 90 27  }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_promote_military_recruitment_flag } }
+	
 	
 	ai_will_do = {
 		factor = 0
 		modifier = {
 			factor = 500
 			all_province_in_state = {
-				base_production = 4
+				base_manpower = 4
 			}
 			area_for_scope_province = {
-				base_production = 16
+				base_manpower = 16
 			}
 		}
 	}
-	
 }
