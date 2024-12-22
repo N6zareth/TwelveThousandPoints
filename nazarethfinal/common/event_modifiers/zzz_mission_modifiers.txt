@@ -1,0 +1,5 @@
+zzz_french_colonial_enthusiasm = {
+    global_colonial_growth = 0.10
+    native_uprising_chance -0.20
+    native_assimilation = 0.25
+}

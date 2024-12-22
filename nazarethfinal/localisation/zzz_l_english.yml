@@ -22,9 +22,12 @@
  fra_royal_musketeers:0 "Musketeers of the Guard"
  fra_royal_musketeers_desc: "In 1622 Lous XIII established the Musketeers of the Guard which acted as the King's elite personal guard; these Musketeers were the most prestigious units in the French Army with only Nobles being able to enlist."
 
-naz_mor_reconquista:0 "The Reconquista"
-naz_mor_reconquista_desc: "For five hundred years the Muslim caliphates of the Maghreb have fought the Christian Kingdoms of Western Europe for hegemony of Iberia - five hundred years of warfare has strengthened the armies of Morocco."
- 
+ naz_mor_reconquista:0 "The Reconquista"
+ naz_mor_reconquista_desc: "For five hundred years the Muslim caliphates of the Maghreb have fought the Christian Kingdoms of Western Europe for hegemony of Iberia - five hundred years of warfare has strengthened the armies of Morocco."
+ zzz_french_colonial_enthusiasm:0 "French Colonial Enthusiasm"
+ zzz_french_colonial_enthusiasm_desc: "Our people are eager to settle in the new world and reap its endless bounties."
+
+
  economic_golden_age:0 "¤ Golden Age (Economic)"
  military_golden_age:0 "£infantry_icon_small£ Golden Age (Military)"
  
