@@ -1,4 +1,19 @@
 country_decisions = {
+	gecko_court_recruitment = {
+		color = { 166 0 0 }
+		potential = {
+			ai = no
+			NOT = { has_country_flag = gecko_court_in_court_recruitment_cflag }
+		}
+		allow = {
+			treasury = 25
+		}
+
+		effect = {
+			country_event = { id = gecko_court.1 }
+		}
+	}
+
 	zzz_eco_golden_age_decisions = {
 		color = { 166  0  0 }
 		ai_will_do = {

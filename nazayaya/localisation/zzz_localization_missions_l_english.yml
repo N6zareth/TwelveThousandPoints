@@ -1,0 +1,60 @@
+﻿l_english:
+
+### BASE ###
+zzz_colonial_ambitions_miss:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision\n\n §YColonial Ventures§! decision is available at §Ydiplomatic and administrative technology level 5§!"
+
+### BRITAIN ###
+# Discover the Americas
+naz_gbr_discover_america:0 "§Y[Root.GetName]§! has discovered the §YNew World§!"
+# Colonize Canada
+naz_gbr_colonize_canada.1:0 "§Y[Root.GetName]§! has discovered the §YCanada§! region"
+naz_gbr_colonize_canada.2:0 "§Y[Root.GetName]§! or its colonial subjects own 10 provinces in the §YCanada§! region"
+# Settle in the New World
+naz_gbr_settle_new_world:0 "§Y[Root.GetName]§! or its colonial subjects own 10 provinces in the §YNew World§!"
+# Colonize Caribbean
+naz_gbr_colonize_caribbean:0 "§Y[Root.GetName]§! or its colonial subjects own 5 provinces in the §YCaribbean§! region"
+# Dominate New World
+naz_gbr_dominate_new_world.1:0 "§Y[Root.GetName]§! or its colonial subjects own 200 provinces in the §YCaribbean§!"
+naz_gbr_dominate_new_world.2:0 "§Y[Root.GetName]§! has no colonial subjects with §Y25% Liberty Desire§!"
+# Chart the Southern Seas
+naz_gbr_chart_south_seas:0 "§Y[Root.GetName]§! has discovered the §YEastern Indian Ocean§! region"
+# Colonize Spice Isles
+naz_gbr_colonize_spice_isles:0 "§Y[Root.GetName]§! or its non-tributary subjects own §YSri Lanka§!"
+
+### SPAIN / CASTILE ###
+# Sails of Exploration
+naz_castile_exploration_ideas:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision\n\n §YColonial Ventures§! decision is available at §Ydiplomatic and administrative technology level 5§!"
+# Naz Spice Islands
+naz_sail_to_the_east_indies:0 "§Y[Root.GetName]§! has discovered the §YEastern Indian Region§!"
+# Las Islas Filipinas
+naz_islas_filipinas:0 "§Y[Root.GetName]§! or its non-tributary subjects own at least 25 provinces in the §YIndia§! subcontinent\n\nUnfortunately I deleted the Philippines XD - Naz"
+# Discover Caribbean
+naz_cas_discover_caribbean:0 "§Y[Root.GetName]§! or its colonial subjects own a province in the §YNew World§!"
+# Caribbean Colony
+naz_cas_caribbean_colony:0 "§Y[Root.GetName]§! or its colonial subjects own a province in the §YCaribbean§! region"
+# The Spanish Main
+naz_cas_spanish_main:0 "§Y[Root.GetName]§! or its colonial subjects ows 5 provinces in the §YColombia§! region"
+# Establish la Plata
+naz_establish_la_plata:0 "§Y[Root.GetName]§! or its colonial subjects own 5 provinces in the §YPeru§! region"
+# New Granada
+naz_new_granada.1:0 "§Y[Root.GetName]§! or its colonial subjects own 5 states in the §YColombia§! region with a holy order"
+naz_new_granada.2:0 "§Y[Root.GetName]§! or its colonial subjects own 25 provinces in the §YColombia§! region"
+
+### PORTUGAL ###
+# Sails of Exploration
+naz_sails_of_exploration:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision\n\n §YColonial Ventures§! decision is available at §Ydiplomatic and administrative technology level 5§!"
+# Go Westward
+naz_go_westward.1:0 "§Y[Root.GetName]§! has discovered the §YBrazil§! region"
+naz_gow_westward.2:0 "§Y[Root.GetName]§! or its colonial subjects own 1 province in the §YBrazil§! region"
+# Jesuit Missions
+naz_por_jesuits:0 "§Y[Root.GetName]§! or its colonial subjects own 7 states in the §YBrazil§! region with a holy order"
+# Colonize Caribbean
+naz_por_colonize_caribbean:0 "§Y[Root.GetName]§! or its colonial subjects own 5 provinces in the §YCaribbean§! region"
+# Establish foothold in Brazil
+naz_por_foothold_brazil:0 "§Y[Root.GetName]§! or its colonial subjects own 10 provinces in the §YBrazil§! region"
+
+### FRANCE ###
+naz_france_discovers_north_america:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision\n\n §YColonial Ventures§! decision is available at §Ydiplomatic and administrative technology level 5§!"
+
+### SWEDEN ###
+swe_colonial_ambitions:0 "§Y[Root.GetName]§! has enacted the §YColonial Ventures§! decision\n\n §YColonial Ventures§! decision is available at §Ydiplomatic and administrative technology level 5§!"
