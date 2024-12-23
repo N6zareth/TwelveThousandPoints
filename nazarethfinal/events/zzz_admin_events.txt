@@ -1,0 +1,54 @@
+country_event = { #Recruit Adm Advisor
+	id = zzz_advisor_admin
+	title = zzz_title_admin
+	picture = AULIC_COUNCIL_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = zzz_admin.1
+
+		add_treasury = -25
+		create_advisor = philosopher
+	}
+	option = {
+		name = zzz_admin.2
+
+		add_treasury = -25
+		create_advisor = natural_scientist
+	}
+	option = {
+		name = zzz_admin.3
+
+		add_treasury = -25
+		create_advisor = artist
+	}
+	option = {
+		name = zzz_admin.4
+
+		add_treasury = -25
+		create_advisor = treasurer
+	}
+	option = {
+		name = zzz_admin.5
+
+		add_treasury = -25
+		create_advisor = theologian 
+	}
+	option = {
+		name = zzz_admin.6
+
+		add_treasury = -25
+		create_advisor = master_of_mint
+	}
+	option = {
+		name = zzz_admin.7
+
+		add_treasury = -25
+		create_advisor = inquisitor
+	}
+	option = {
+		name = zzz_nevermind
+		#nothing
+	}
+}

@@ -11,15 +11,18 @@ country_event = {
 	
 	option = { #Recruit Administrative advisor
 		trigger = { adm_power = 25 }
+		name = zzz_advisor_admin
 		country_event = { id = zzz_id_admin }
 	}
 	option = { #Recruit Diplomatic advisor
 		trigger = { dip_power = 25 }
-		country_event = { id = zzz_id_dip }
+		name = zzz_advisor_dip
+		country_event = { id = i_hate_niggers }
 	}
 	option = { #Recruit Military advisor
 		trigger = { mil_power = 25 }
-		country_event = { id = zzz_id_mil }
+		name = zzz_advisor_mil
+		country_event = { id = kill_all_niggers }
 	}
 	option = { #Hire a foreign conquistador
 		trigger = {
@@ -53,169 +56,4 @@ country_event = {
 		name = zzz_nevermind
 	}
 	after = { hidden_effect = { clr_country_flag = gecko_court_in_court_recruitment_cflag } }
-}
-
-country_event = { #Recruit Adm Advisor
-	id = zzz_id_admin
-	title = zzz_title_admin
-	picture = AULIC_COUNCIL_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = zzz_admin.1
-
-		add_treasury = -25
-		create_advisor = philosopher
-	}
-	option = {
-		name = zzz_admin.2
-
-		add_treasury = -25
-		create_advisor = natural_scientist
-	}
-	option = {
-		name = zzz_admin.3
-
-		add_treasury = -25
-		create_advisor = artist
-	}
-	option = {
-		name = zzz_admin.4
-
-		add_treasury = -25
-		create_advisor = treasurer
-	}
-	option = {
-		name = zzz_admin.5
-
-		add_treasury = -25
-		create_advisor = theologian 
-	}
-	option = {
-		name = zzz_admin.6
-
-		add_treasury = -25
-		create_advisor = master_of_mint
-	}
-	option = {
-		name = zzz_admin.7
-
-		add_treasury = -25
-		create_advisor = inquisitor
-	}
-	option = {
-		name = zzz_nevermind
-		#nothing
-	}
-}
-
-country_event = { #Recruit Dip advisor
-	id = zzz_id_dip
-	title = zzz_title_dip
-	picture = DIPLOMACY_SIGNING_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = zzz_dip.1
-
-		add_treasury = -25
-		create_advisor = statesman
-	}
-	option = {
-		name = zzz_dip.2
-
-		add_treasury = -25
-		create_advisor = naval_reformer
-	}
-	option = {
-		name = zzz_dip.3
-
-		add_treasury = -25
-		create_advisor = trader
-	}
-	option = {
-		name = zzz_dip.4
-
-		add_treasury = -25
-		create_advisor = spymaster
-	}
-	option = {
-		name = zzz_dip.5 
-
-		add_treasury = -25
-		create_advisor = colonial_governor
-	}
-	option = {
-		name = zzz_dip.6
-
-		add_treasury = -25
-		create_advisor = diplomat
-	}
-	option = {
-		name = zzz_dip.7
-
-		add_treasury = -25
-		create_advisor = navigator
-	}
-	option = {
-		name = zzz_nevermind
-		#nothing
-	}
-}
-
-country_event = { #Recruit Mil Advisor 
-	id = zzz_id_mil
-	title = zzz_title_mil
-	picture = GENERALS_DISCUSSING_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = zzz_mil.1
-
-		add_treasury = -25
-		create_advisor = army_reformer
-	}
-	option = {
-		name = zzz_mil.2
-
-		add_treasury = -25
-		create_advisor = army_organiser
-	}
-	option = {
-		name = zzz_mil.3
-
-		add_treasury = -25
-		create_advisor = commandant
-	}
-	option = {
-		name = zzz_mil.4
-
-		add_treasury = -25
-		create_advisor = quartermaster
-	}
-	option = {
-		name = zzz_mil.5
-
-		add_treasury = -25
-		create_advisor = recruitmaster
-	}
-	option = {
-		name = zzz_mil.6
-
-		add_treasury = -25
-		create_advisor = fortification_expert
-	}
-	option = {
-		name = zzz_mil.7
-
-		add_treasury = -25
-		create_advisor = grand_captain
-	}
-	option = {
-		name = zzz_nevermind
-		#nothing
-	}
 }

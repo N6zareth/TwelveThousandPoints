@@ -97,7 +97,7 @@
  zzz_conquistador:0 "£conquistador_16£ §GConquistador§!"
  zzz_explorer:0 "£explorer_16£ §GExplorer§!"
 
- zzz_title_admin:0 "£adm£ Administrative Advisors"
+ zzz_title_admin:0 "£adm£ Administrative advisors"
  zzz_admin.1:0 "Yearly Prestige §GPhilosopher§!"
  zzz_admin.2:0 "Production Efficiency §GNatural Scientist§!"
  zzz_admin.3:0 "Stability Cost §GArtist§!"
@@ -106,7 +106,7 @@
  zzz_admin.6:0 "Inflation Reduction §GMaster of Mint§!"
  zzz_admin.7:0 "Missionairy Strength §GInquisitor§!"
 
- zzz_title_dip:0 "£dip£ Diplomatic Advisors"
+ zzz_title_dip:0 "£dip£ Diplomatic advisors"
  zzz_dip.1:0 "Diplomatic Reputation §BStatesman§!"
  zzz_dip.2:0 "Navy Morale §BNaval Reformer§!"
  zzz_dip.3:0 "Trade Efficiency §BTrader§!"
@@ -115,7 +115,7 @@
  zzz_dip.6:0 "Improve Relations §BDiplomat§!"
  zzz_dip.7:0 "Colonial Range §BNavigator§!"
 
- zzz_title_mil:0 "£mil£ Military Advisors"
+ zzz_title_mil:0 "£mil£ Military advisors"
  zzz_mil.1:0 "Army Morale §RArmy Reformer§!"
  zzz_mil.2:0 "Landforce Limit §RArmy Organizer§!"
  zzz_mil.3:0 "Discipline §RCommandant§!"
