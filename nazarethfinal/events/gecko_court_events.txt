@@ -29,7 +29,7 @@ country_event = {
 	option = { #Hire a foreign conquistador
 		trigger = {
 			NOT = { has_country_modifier = hired_conquistador }
-			has_country_flag = qolu_2colonists
+			has_country_modifier = qolu_2colonists
 			}
 		name = gecko_court.1.d
 		add_treasury = 25
