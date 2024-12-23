@@ -10,7 +10,7 @@ military_golden_age = {
 
 qolu_2colonists = {
 	colonists = 2
-	range = 0.5
+	range = 1
 	global_colonial_growth = 15
 	may_explore = yes
 }

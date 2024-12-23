@@ -51,7 +51,6 @@ country_decisions = {
 		color = { 166 0 0 }
 		ai_will_do = {
 			factor = 1
-			ai_importance = 400
 		}
 
 		potential = {

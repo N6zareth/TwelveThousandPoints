@@ -21,3 +21,4 @@ gecko_mercs_spawn_point_trigger = {
 		}
 	}
 }
+

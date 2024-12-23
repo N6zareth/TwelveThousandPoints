@@ -21,7 +21,7 @@ player_modifier = {
 	}
 	governing_capacity_modifier = 0.33
 	num_accepted_cultures = 4
-	ae_impact = -0.5
+	ae_impact = -0.25
 }
 
 Splendid_Court = {
