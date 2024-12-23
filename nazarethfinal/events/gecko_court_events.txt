@@ -1,3 +1,5 @@
+namespace = gecko_court
+
 #Court Recruitment
 country_event = {
 	id = gecko_court.1
@@ -10,27 +12,27 @@ country_event = {
 	immediate = { hidden_effect = { set_country_flag = gecko_court_in_court_recruitment_cflag } }
 	
 	option = { #Recruit Administrative advisor
-		trigger = { adm_power = 25 }
-		name = zzz_advisor_admin
-		country_event = { id = zzz_id_admin }
+		trigger = { add_treasury = -25 }
+		name = gecko_court.1.a
+		country_event = { id = echo.10 }
 	}
 	option = { #Recruit Diplomatic advisor
-		trigger = { dip_power = 25 }
-		name = zzz_advisor_dip
-		country_event = { id = i_hate_niggers }
+		trigger = { add_treasury = -25 }
+		name = gecko_court.1.b
+		country_event = { id = echo.11 }
 	}
 	option = { #Recruit Military advisor
-		trigger = { mil_power = 25 }
-		name = zzz_advisor_mil
-		country_event = { id = kill_all_niggers }
+		trigger = { add_treasury = 25 }
+		name = gecko_court.1.c
+		country_event = { id = echo.12 }
 	}
 	option = { #Hire a foreign conquistador
 		trigger = {
 			NOT = { has_country_modifier = hired_conquistador }
-			has_country_modifier = qolu_2colonists
-		}
-		name =  zzz_conquistador
-		add_treasury = -25
+			has_country_flag = qolu_2colonists
+			}
+		name = gecko_court.1.d
+		add_treasury = 25
 		create_conquistador = { tradition = 10 }
 		add_country_modifier = {
 			name = "hired_conquistador"
@@ -42,8 +44,8 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = hired_explorer }
 			has_country_modifier = qolu_2colonists
-		}
-		name =  zzz_explorer
+			}
+		name = gecko_court.1.e
 		add_treasury = -25
 		create_explorer = { tradition = 10 }
 		add_country_modifier = {
@@ -53,7 +55,7 @@ country_event = {
 		}
 	}
 	option = { #Back
-		name = zzz_nevermind
+		name = gecko_court.1.g
 	}
 	after = { hidden_effect = { clr_country_flag = gecko_court_in_court_recruitment_cflag } }
 }
