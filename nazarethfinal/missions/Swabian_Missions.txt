@@ -1,0 +1,23 @@
+naz_swabia = {
+	slot = 2
+	generic = no
+	ai = yes 
+	potential = {
+		tag = WUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	naz_swa_1 = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		
+		trigger = {
+			ai = no
+		}
+
+		effect = {
+			add_treasury = 1
+		}
+	}
+}
