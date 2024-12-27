@@ -2783,8 +2783,8 @@ gbr_row_4 = {
 		position = 8
 		provinces_to_highlight = {
 			OR = {
-				area = lanka_area
-				area = south_lanka_area
+				trade_company_region = trade_company_moluccas
+				trade_company_region = trade_company_indonesia
 			}
 			is_sea = no
 			NOT = { owned_by = ROOT }
@@ -2792,16 +2792,13 @@ gbr_row_4 = {
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = GBR }
-			custom_trigger_tooltip = {
-				tooltip = naz_gbr_colonize_spice_isles
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 3
-					area = lanka_area
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					trade_company_region = trade_company_moluccas
+					trade_company_region = trade_company_indonesia
 				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 3 
-					area = south_lanka_area
-				}
+				is_city = yes
+				value = 4
 			}
 		}
 		effect = {
@@ -3769,14 +3766,24 @@ gbr_row_5 = {
 		required_missions = { gbr_seize_the_cape }
 		position = 7
 		provinces_to_highlight = {
-			superregion = india_superregion
+			OR = {
+				colonial_region = colonial_australia
+				trade_company_region = trade_company_indonesia
+				trade_company_region = trade_company_moluccas
+			}
 			NOT = { has_discovered = ROOT }
 		}		
 		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
 			custom_trigger_tooltip = {
-				tooltip = naz_gbr_chart_south_seas
-				east_indian_ocean_region = {
+				tooltip = ned_spice_australia.tooltip
+				colonial_australia = {
+					has_discovered = ROOT
+				}
+				trade_company_indonesia = {
+					has_discovered = ROOT
+				}
+				trade_company_moluccas = {
 					has_discovered = ROOT
 				}
 			}
@@ -3784,6 +3791,49 @@ gbr_row_5 = {
 		effect = {
 			add_country_modifier = {
 				name = "eng_australian_colony"
+				duration = 9125
+			}
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+	gbr_colonize_australia = {
+		icon = colonize_australia
+		required_missions = { gbr_chart_the_southern_sea }
+		position = 8
+		provinces_to_highlight = {
+			region = australia_region
+			ROOT = {
+				NOT = {
+					any_subject_country = {
+						is_colonial_nation = yes
+						capital_scope = {
+							colonial_region = colonial_australia
+						}
+						any_owned_province = {
+							region = australia_region
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			not_in_mission_preview_mode = { key = GBR }
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = {
+					colonial_region = colonial_australia
+				}
+				any_owned_province = {
+					region = australia_region
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = gbr_colonial_australia
 				duration = 9125
 			}
 		}

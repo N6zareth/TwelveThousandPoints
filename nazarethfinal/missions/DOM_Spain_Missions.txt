@@ -2677,6 +2677,59 @@ dom_cas_missions_3_c = {
 			}
 		}
 	}
+	
+	gc_cas_spa_california2 = {
+		icon = mission_colonize_california
+		required_missions = { gc_cas_spa_new_spain2 }
+		position = 13
+		provinces_to_highlight = {
+			colonial_region = colonial_california
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+					religion = catholic
+				}
+				2021 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_holy_order_trigger = yes
+				}
+			}
+			else = {
+				2021 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = ROOT
+				}
+			}
+			4637 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_california
+				is_city = yes
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			2021 = {
+				add_base_tax = 3
+			}
+			4637 = { add_center_of_trade_level = 1  add_base_production = 4 } 
+			colonial_california = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 }
 
 dom_cas_missions_4 = {
@@ -4231,33 +4284,55 @@ dom_cas_missions_5_c = {
 		position = 8
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = naz_sail_to_the_east_indies
-					east_indian_ocean_region = {
-						has_discovered = ROOT
-					}
+				tooltip = cas_spice_islands_tooltip
+				moluccas_region = {
+					type = all
+					has_discovered = ROOT
 				}
 			}
+		}
 		effect = {
-			saurashtra_area = {
+			mindanao_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_territorial_core = ROOT
+				add_permanent_claim = ROOT
 			}
-			ahmedabad_area = {
+			west_mindanao_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_territorial_core = ROOT
+				add_permanent_claim = ROOT
 			}
-			patan_area = {
+			visayas_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_territorial_core = ROOT
+				add_permanent_claim = ROOT
+			}
+			palawan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -4267,18 +4342,43 @@ dom_cas_missions_5_c = {
 		required_missions = { gc_cas_spa_discover_spice_islands2 }
 		position = 9
 		provinces_to_highlight = {
-			superregion = india_superregion
+			OR = {
+				area = mindanao_area
+				area = west_mindanao_area
+				area = visayas_area
+				area = palawan_area
+				area = luzon_area
+				area = southern_luzon_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = naz_islas_filipinas
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 25
-					superregion = india_superregion
-				}
+			southern_luzon_area = {
+				type = all
+				owned_by = ROOT
 			}
+			luzon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mindanao_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_mindanao_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			visayas_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			palawan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			224 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			224 = { change_trade_goods = cloves add_base_production = 3 } 
