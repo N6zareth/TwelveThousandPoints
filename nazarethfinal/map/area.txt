@@ -1911,7 +1911,7 @@ south_atlantic_islands_area = { #2
 }
 
 matamba_area = { #3
-	2948 4082 4084
+	2948 4082 4084 1171
 }
 
 coastal_kongo = { #5
